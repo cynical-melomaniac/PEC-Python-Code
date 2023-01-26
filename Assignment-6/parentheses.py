@@ -19,22 +19,20 @@ class validity_of_parentheses:
                 curly_open += 1
 
 
-            elif round_open > 1 and parenthesis == ')':
+            elif parenthesis == ')':
                 round_open -= 1
             
-            elif square_open > 1 and parenthesis == ']':
+            elif parenthesis == ']':
                 square_open -= 1
             
-            elif curly_open > 1 and parenthesis == '}':
+            elif parenthesis == '}':
                 curly_open -= 1
 
 
-            if round_open == 0 and square_open == 0 and curly_open == 0:
-                print("Given string has valid parentheses.")
-                break
+        if round_open == 0 and square_open == 0 and curly_open == 0:
+            print("Given string has valid parentheses.")
             
-            if round_open != 0 or square_open != 0 or curly_open != 0:
-                print("Given string has invalid parentheses.")
-                break
+        if round_open != 0 or square_open != 0 or curly_open != 0:
+            print("Given string has invalid parentheses.")
 
 validity_of_parentheses(input_string)
