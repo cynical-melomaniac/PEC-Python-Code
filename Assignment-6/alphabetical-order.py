@@ -7,4 +7,14 @@ def alphabetical_sorter():
 
     print(sorted_list)
 
+    output = ""
+
+    for item in sorted_list:
+        if output != "":
+            output = output + "-" + item
+        if output == "":
+            output = output + item
+
+    print(output)
+
 alphabetical_sorter()
