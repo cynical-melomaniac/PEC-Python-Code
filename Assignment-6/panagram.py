@@ -14,9 +14,8 @@ def find_panagram():
         for char_comparison in char_comparison_list:
             if char == char_comparison:
                 char_comparison_list = char_comparison_list.replace(char_comparison, "")
-                count += 1
 
-    if (count == 26):
+    if (char_comparison_list == ""):
         print("The string entered is a panagram.")
     else:
         print("The string entered is not a panagram.")
