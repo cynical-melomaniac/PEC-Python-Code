@@ -1,14 +1,14 @@
 from math import factorial
 
 def pascal_triangle():
-    n = int(input("Enter the number of rows:"))
+    rows = int(input("Enter the number of rows:"))
  
-    for a in range(n):
-        for b in range(n-a+1):
+    for row in range(rows):
+        for num in range(rows-row+1):
             print(end=" ")
  
-        for b in range(a+1):
-            print(factorial(a)//(factorial(b)*factorial(a-b)), end=" ")
+        for num in range(row+1):
+            print(factorial(row) // (factorial(num) * factorial(row-num)), end=" ")
 
         print()
 
