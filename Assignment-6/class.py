@@ -25,7 +25,7 @@ if isinstance(marks2, Marks):
 if isinstance(marks3, Marks):
     print("marks3 is an instance of class Student.")
     
-if issubclass(type(Student), type(type)):
+if issubclass(type(Student), object):
     print("Student is a subclass of class.")
-if issubclass(type(Marks), type(type)):
+if issubclass(type(Marks), object):
     print("Marks is a subclass of class.")
