@@ -15,6 +15,6 @@ def alphabetical_sorter():
         if output == "":
             output = output + item
 
-    print(output)
+    print("Sorted string: ", output)
 
 alphabetical_sorter()
